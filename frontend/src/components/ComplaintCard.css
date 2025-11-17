@@ -1,0 +1,145 @@
+.complaint-card {
+  background: rgba(204, 213, 210, 0.03);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.complaint-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-accent);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.card-category {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--primary-accent);
+  background: rgba(228, 165, 118, 0.1);
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid rgba(228, 165, 118, 0.2);
+}
+
+.status-tag {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.3rem 0.7rem;
+  border-radius: 99px;
+}
+
+.status-tag.status-submitted {
+  background: rgba(228, 165, 118, 0.1);
+  color: var(--primary-accent);
+}
+
+.status-tag.status-in-progress {
+  background: rgba(105, 142, 162, 0.2);
+  color: #698ea2;
+}
+
+.status-tag.status-resolved {
+  background: rgba(46, 204, 113, 0.1);
+  color: #2ecc71;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.card-metadata {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.card-description {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.upvote-button {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.upvote-button:hover {
+  border-color: var(--primary-accent);
+  color: var(--primary-accent);
+}
+
+.upvote-button.voted {
+  background: var(--primary-accent);
+  border-color: var(--primary-accent);
+  color: var(--bg-primary);
+}
+
+.upvote-button .upvote-icon {
+  transition: transform 0.2s ease;
+}
+
+.upvote-button.voted .upvote-icon {
+  transform: scale(1.2);
+}
+
+.vote-count {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.details-link {
+  background: transparent;
+  border: 1px solid var(--primary-accent);
+  color: var(--primary-accent);
+  text-decoration: none;
+  text-align: center;
+  padding: 0.7rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.details-link:hover {
+  background: var(--primary-accent);
+  color: var(--bg-primary);
+}
